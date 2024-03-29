@@ -8,15 +8,19 @@ import ContactSection from "./sections/ContactSection";
 
 function App() {
   return (
-    <div className="mx-auto max-w-[1110px] px-6 text-white font-poppins">
-      <NavBar />
-      <div className="flex flex-col gap-5 my-10">
+    <>
+      {/* <div className="mx-auto max-w-[1110px] px-6 text-white font-poppins"> */}
+      <header className="mx-auto max-w-[1110px] px-6 text-white font-poppins">
+        <NavBar />
+      </header>
+      <main className="mx-auto max-w-[1110px] px-6 text-white font-poppins">
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
         <ContactSection />
-      </div>
-    </div>
+      </main>
+      {/* </div> */}
+    </>
   );
 }
 
