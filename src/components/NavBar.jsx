@@ -9,8 +9,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav>
-      <div className="flex justify-between items-center py-5 z-50">
+    <nav className="">
+      <div className="fixed top-0 left-0 right-0 flex justify-between items-center p-6 bg-black z-50">
         <a
           className="text-white font-extrabold text-xl uppercase"
           href="index.html"
@@ -44,7 +44,7 @@ const NavBar = () => {
             <a
               className="hover:text-yellow-500 after:block after:h-0.5 after:bg-yellow-500 after:scale-x-0
               after:transition after:ease-in-out after:duration-200 after:hover:scale-x-100"
-              href=""
+              href="#mainSection"
             >
               Home
             </a>
@@ -89,24 +89,34 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         <ul
-          className={`md:hidden absolute font-normal text-lg flex flex-col justify-center items-center gap-8 overflow-hidden bg-black top-16 left-0 z-30 transition-all ease-in duration-200 ${
+          className={`md:hidden absolute font-normal text-lg flex flex-col justify-center items-center gap-8 overflow-hidden bg-black top-52 left-0 z-50 transition-all ease-in duration-200 ${
             isOpen ? "h-1/2 w-full" : "h-0 w-full"
           }`}
         >
           <li>
-            <a href="">Home</a>
+            <a href="#mainSection" onClick={MenuHandler}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="#aboutSection" onClick={MenuHandler}>
+              About
+            </a>
           </li>
           <li>
-            <a href="">Skills</a>
+            <a href="#skillsSection" onClick={MenuHandler}>
+              Skills
+            </a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#projectsSection" onClick={MenuHandler}>
+              Projects
+            </a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contactSection" onClick={MenuHandler}>
+              Contact
+            </a>
           </li>
         </ul>
       </div>
