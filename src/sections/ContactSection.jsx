@@ -4,7 +4,7 @@ import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
 
 const ContactSection = () => {
   return (
-    <section className="mt-32" id="contactSection">
+    <section className="my-32" id="contactSection">
       <div className="text-center mb-10">
         <h2 className="md:text-3xl text-2xl font-bold">Contact Me</h2>
         <h2 className="md:text-3xl text-2xl text-gray-700 font-bold opacity-60 relative md:-top-12 -top-10 -z-40 text-center">
