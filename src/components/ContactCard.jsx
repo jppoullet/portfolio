@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactCard = () => {
   const [result, setResult] = useState("");
@@ -19,24 +19,22 @@ const ContactCard = () => {
 
     if (res.success) {
       console.log("Success", res);
-      // setResult(res.message);
+      toast.success("🦄 Wow so easy!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     } else {
       console.log("Error", res);
       // setResult(res.message);
     }
 
     document.getElementById("form").reset();
-
-    toast.success(`${res.message} We will contact you soon, Thank you.`, {
-      position: "top-center",
-      autoClose: 3500,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: false,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
   };
 
   const formatPhone = (e) => {
@@ -65,6 +63,12 @@ const ContactCard = () => {
         onSubmit={handleSubmit}
         className="w-full p-4 rounded-sm shadow-xl max-w-full bg-gray-100"
       >
+        {/* Custom Subject Line for Email from Web3forms */}
+        <input
+          type="hidden"
+          name="subject"
+          value="New message from jeanpaulpoullet.com"
+        ></input>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           <input
             className="w-full bg-white text-gray-900 mt-2 p-3 rounded-md border border-gray-300 focus:outline-none focus:shadow-outline"
@@ -115,7 +119,7 @@ const ContactCard = () => {
           </button>
         </div>
       </form>
-      {/* <ToastContainer /> */}
+      <ToastContainer />
     </div>
   );
 };
