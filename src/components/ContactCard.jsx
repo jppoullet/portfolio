@@ -98,6 +98,7 @@ const ContactCard = () => {
             name="phone"
             value={phoneNumber}
             onChange={formatPhone}
+            minLength="10"
             required
           />
         </div>
@@ -119,7 +120,6 @@ const ContactCard = () => {
           </button>
         </div>
       </form>
-      <ToastContainer />
     </div>
   );
 };

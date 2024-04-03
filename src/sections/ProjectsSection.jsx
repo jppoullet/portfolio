@@ -23,7 +23,11 @@ const ProjectsSection = () => {
       <section className="flex flex-col items-center">
         {/* Project 1 */}
         <div className="flex flex-col items-center text-center mt-16 mb-10">
-          <img src={bkinremodeling} alt="bkinremodeling" />
+          <img
+            src={bkinremodeling}
+            alt="bkinremodeling"
+            className="md:max-w-[850px]"
+          />
           <h3 className="mt-4 mb-2 text-2xl text-yellow-500">
             B & Kin Remodeling
           </h3>
@@ -59,7 +63,7 @@ const ProjectsSection = () => {
 
         {/* Project 2 */}
         <div className="flex flex-col items-center text-center mt-16 mb-10">
-          <img src={todoAppReact} alt="" />
+          <img src={todoAppReact} alt="" className="md:max-w-[850px]" />
           <h3 className="mt-4 mb-2 text-2xl text-yellow-500">Todo App</h3>
           <p>
             Filter by task status, task count, and a clear completed tasks
@@ -95,7 +99,7 @@ const ProjectsSection = () => {
 
         {/* Project 3 */}
         <div className="flex flex-col items-center text-center mt-16 mb-10">
-          <img src={joblistings} alt="" />
+          <img src={joblistings} alt="" className="md:max-w-[850px]" />
           <h3 className="mt-4 mb-2 text-2xl text-yellow-500">Job Board</h3>
           <p>
             Listing of available jobs. Click on keywords to filter by selected

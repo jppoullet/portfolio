@@ -1,6 +1,7 @@
 import React from "react";
 import ContactCard from "../components/ContactCard";
 import { HiOutlinePhone, HiOutlineMail } from "react-icons/hi";
+import contactMe from "../assets/contactMe1.webp";
 
 const ContactSection = () => {
   return (
@@ -32,8 +33,11 @@ const ContactSection = () => {
           </a>
         </p>
       </div>
+      <div className="">
+        {/* <img src={contactMe} alt="" /> */}
 
-      <ContactCard />
+        <ContactCard />
+      </div>
     </section>
   );
 };
