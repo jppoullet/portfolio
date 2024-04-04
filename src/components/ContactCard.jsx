@@ -57,7 +57,7 @@ const ContactCard = () => {
   };
 
   return (
-    <div>
+    <div className="md:max-w-[850px] m-auto">
       <form
         id="form"
         onSubmit={handleSubmit}
