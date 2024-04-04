@@ -18,8 +18,8 @@ const ContactCard = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
-      toast.success("🦄 Wow so easy!", {
+      console.log("Success123", res);
+      toast.success("Message sent! Thank You", {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -30,11 +30,12 @@ const ContactCard = () => {
         theme: "dark",
       });
     } else {
-      console.log("Error", res);
+      console.log("Error123", res);
       // setResult(res.message);
     }
 
     document.getElementById("form").reset();
+    setPhoneNumber("");
   };
 
   const formatPhone = (e) => {
@@ -120,6 +121,7 @@ const ContactCard = () => {
           </button>
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };
