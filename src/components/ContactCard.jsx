@@ -21,7 +21,7 @@ const ContactCard = () => {
       console.log("Success123", res);
       toast.success("Message sent! Thank You", {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 4000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

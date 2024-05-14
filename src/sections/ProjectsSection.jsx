@@ -2,6 +2,7 @@ import React from "react";
 import bkinremodeling from "../assets/bkinremodeling.png";
 import todoAppReact from "../assets/todo-app-react.png";
 import joblistings from "../assets/joblistingswithfilter.png";
+import jpStore from "../assets/jpstore.png";
 import {
   SiReact,
   SiJavascript,
@@ -63,6 +64,48 @@ const ProjectsSection = () => {
 
         {/* Project 2 */}
         <div className="flex flex-col items-center text-center mt-16 mb-10">
+          <img
+            src={jpStore}
+            alt="fake-ecommerce-page"
+            className="md:max-w-[850px]"
+          />
+          <h3 className="mt-4 mb-2 text-2xl text-yellow-500">
+            JP's Store - Fake E-commerce Page
+          </h3>
+          <p>
+            A personal project utilizing API data to create a mock store front
+            with shopping cart functionalities. Built using React.js and
+            Tailwind.
+          </p>
+          <div className="flex items-center justify-center mt-7 gap-16">
+            <ul className="flex items-center gap-3">
+              <a
+                className="border py-1 px-2"
+                href="https://fake-ecommerce-page.vercel.app/"
+              >
+                Live
+              </a>
+              <a
+                className="border py-1 px-2"
+                href="https://github.com/jppoullet/fake-ecommerce-page"
+              >
+                Source
+              </a>
+            </ul>
+
+            <ul className="flex items-center gap-5">
+              <li>
+                <SiReact size={30} />
+              </li>
+              <li>
+                <SiTailwindcss size={30} />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Project 3 */}
+        <div className="flex flex-col items-center text-center mt-16 mb-10">
           <img src={todoAppReact} alt="" className="md:max-w-[850px]" />
           <h3 className="mt-4 mb-2 text-2xl text-yellow-500">Todo App</h3>
           <p>
@@ -97,7 +140,7 @@ const ProjectsSection = () => {
           </div>
         </div>
 
-        {/* Project 3 */}
+        {/* Project 4 */}
         <div className="flex flex-col items-center text-center mt-16 mb-10">
           <img src={joblistings} alt="" className="md:max-w-[850px]" />
           <h3 className="mt-4 mb-2 text-2xl text-yellow-500">Job Board</h3>
