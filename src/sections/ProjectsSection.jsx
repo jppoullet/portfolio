@@ -14,6 +14,19 @@ import {
 } from "react-icons/si";
 
 const ProjectsSection = () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        console.log("intersecting");
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll("#project");
+  hiddenElements.forEach((el) => observer.observe(el));
+  console.log(hiddenElements);
+
   return (
     <section className="flex flex-col items-center mt-36" id="projectsSection">
       <h2 className="md:text-4xl text-3xl font-bold">Projects</h2>
@@ -23,7 +36,10 @@ const ProjectsSection = () => {
 
       <section className="flex flex-col items-center">
         {/* Project 1 */}
-        <div className="flex flex-col items-center text-center mt-16 mb-10">
+        <div
+          id="project"
+          className="flex flex-col items-center text-center mt-16 mb-10"
+        >
           <img
             src={bkinremodeling}
             alt="bkinremodeling"
@@ -63,7 +79,10 @@ const ProjectsSection = () => {
         </div>
 
         {/* Project 2 */}
-        <div className="flex flex-col items-center text-center mt-16 mb-10">
+        <div
+          id="project"
+          className="flex flex-col items-center text-center mt-16 mb-10"
+        >
           <img
             src={jpStore}
             alt="fake-ecommerce-page"
@@ -105,7 +124,10 @@ const ProjectsSection = () => {
         </div>
 
         {/* Project 3 */}
-        <div className="flex flex-col items-center text-center mt-16 mb-10">
+        <div
+          id="project"
+          className="flex flex-col items-center text-center mt-16 mb-10"
+        >
           <img src={todoAppReact} alt="" className="md:max-w-[850px]" />
           <h3 className="mt-4 mb-2 text-2xl text-yellow-500">Todo App</h3>
           <p>
@@ -141,7 +163,10 @@ const ProjectsSection = () => {
         </div>
 
         {/* Project 4 */}
-        <div className="flex flex-col items-center text-center mt-16 mb-10">
+        <div
+          id="project"
+          className="flex flex-col items-center text-center mt-16 mb-10"
+        >
           <img src={joblistings} alt="" className="md:max-w-[850px]" />
           <h3 className="mt-4 mb-2 text-2xl text-yellow-500">Job Board</h3>
           <p>

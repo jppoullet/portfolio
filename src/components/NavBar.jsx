@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <nav className="">
-      <div className="fixed top-0 left-0 right-0 flex justify-between items-center p-6 bg-black">
+      <div className="fixed top-0 left-0 right-0 flex justify-between items-center px-16 py-6 bg-black">
         <a
           className="text-white font-extrabold text-xl uppercase"
           href="index.html"
