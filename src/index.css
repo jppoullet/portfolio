@@ -12,3 +12,29 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hiddenInView {
+  opacity: 0;
+  filter: blue(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.showInView {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hiddenInView2 {
+  opacity: 0;
+  filter: blue(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.showInView2 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

@@ -14,21 +14,8 @@ import {
 } from "react-icons/si";
 
 const ProjectsSection = () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting) {
-        console.log("intersecting");
-      }
-    });
-  });
-
-  const hiddenElements = document.querySelectorAll("#project");
-  hiddenElements.forEach((el) => observer.observe(el));
-  console.log(hiddenElements);
-
   return (
-    <section className="flex flex-col items-center mt-36" id="projectsSection">
+    <section className="flex flex-col items-center" id="projectsSection">
       <h2 className="md:text-4xl text-3xl font-bold">Projects</h2>
       <h2 className="md:text-3xl text-2xl text-gray-700 font-bold opacity-60 relative md:-top-12 -top-11 -z-40 text-center">
         Projects

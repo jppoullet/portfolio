@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      transitionDuration: {
+        2000: "2000ms",
+      },
     },
     plugins: [],
   },

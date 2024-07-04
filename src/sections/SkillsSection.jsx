@@ -10,7 +10,7 @@ import {
 
 const SkillsSection = () => {
   return (
-    <section className="flex flex-col items-center mt-36" id="skillsSection">
+    <section className="flex flex-col items-center h-screen" id="skillsSection">
       <h2 className="md:text-4xl text-3xl font-bold">Skills</h2>
       <h2 className="md:text-3xl text-2xl text-gray-700 font-bold opacity-60 relative md:-top-12 -top-11 -z-40 text-center">
         Skills
