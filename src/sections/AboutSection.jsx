@@ -17,7 +17,7 @@ const AboutSection = () => {
     //       {aboutInView ? <AboutSection /> : ""}
     //     </section>
     <section ref={aboutRef}>
-      <section className="flex flex-col h-screen" id="aboutSection">
+      <section className="flex flex-col mb-36" id="aboutSection">
         <h2 className="md:text-3xl text-2xl font-bold">About Me</h2>
         <h2 className="text-3xl text-gray-700 font-bold opacity-60 relative -top-6 -left-2 -z-40">
           About

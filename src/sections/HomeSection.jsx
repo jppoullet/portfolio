@@ -3,10 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HomeSection = () => {
   return (
-    <section
-      className="flex flex-col my-36 items-center h-screen"
-      id="homeSection"
-    >
+    <section className="flex flex-col my-36 items-center" id="homeSection">
       <img
         className=""
         src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=ShirtCrewNeck&clotheColor=Black&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Brown"

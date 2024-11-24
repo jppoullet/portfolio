@@ -42,15 +42,6 @@ function App() {
           {homeInView ? <HomeSection /> : ""}
         </section>
 
-        {/* <section
-          ref={aboutRef}
-          className={`transition-all duration-1000 ${
-            aboutInView ? "showInView2" : "hiddenInView2"
-          }
-          `}
-        >
-          {aboutInView ? <AboutSection /> : ""}
-        </section> */}
         <AboutSection />
 
         <SkillsSection />

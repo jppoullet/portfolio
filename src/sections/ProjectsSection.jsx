@@ -76,7 +76,7 @@ const ProjectsSection = () => {
             className="md:max-w-[850px]"
           />
           <h3 className="mt-4 mb-2 text-2xl text-yellow-500">
-            JP's Store - Fake E-commerce Page
+            Shop - Fake E-commerce Page
           </h3>
           <p>
             A personal project utilizing API data to create a mock store front
@@ -105,45 +105,6 @@ const ProjectsSection = () => {
               </li>
               <li>
                 <SiTailwindcss size={30} />
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Project 3 */}
-        <div
-          id="project"
-          className="flex flex-col items-center text-center mt-16 mb-10"
-        >
-          <img src={todoAppReact} alt="" className="md:max-w-[850px]" />
-          <h3 className="mt-4 mb-2 text-2xl text-yellow-500">Todo App</h3>
-          <p>
-            Filter by task status, task count, and a clear completed tasks
-            button. Features light/dark mode, Checkmark and strike-through for a
-            completed task. Built using React.js and Sass.
-          </p>
-          <div className="flex items-center justify-center mt-7 gap-16">
-            <ul className="flex items-center gap-3">
-              <a
-                className="border py-1 px-2"
-                href="https://todo-app-react-ten-murex.vercel.app/"
-              >
-                Live
-              </a>
-              <a
-                className="border py-1 px-2"
-                href="https://github.com/jppoullet/todo-app-react"
-              >
-                Source
-              </a>
-            </ul>
-
-            <ul className="flex items-center gap-5">
-              <li>
-                <SiReact size={30} />
-              </li>
-              <li>
-                <SiSass size={30} />
               </li>
             </ul>
           </div>
